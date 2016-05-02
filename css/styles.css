@@ -54,6 +54,8 @@ a{
   padding-right: 20px;
   padding-left: 0px;
   margin-left: 55px;
+
+
 }
 
 .jumbo p{
@@ -92,7 +94,7 @@ a{
   height: 46px;
 }
 
-.center p,
+
 .center h1 {
   padding-left: 60px;
   text-align: center;
@@ -165,6 +167,7 @@ a{
     background-color: #144a80;
     color: #ffffff;
     font-weight: 700;
+    border-bottom: white 2px solid;
 }
 
 
@@ -172,8 +175,42 @@ a{
       color: #fff;
       text-decoration: none;
       background-color: #144a80;
+      border-bottom: white 2px  solid;
   }
+.dropdown-menu>li>a{
+  font-family: 'Alegreya Sans', sans-serif;
+  padding: 15px 20px;
+  background-color: #144a80;
+  color: #fff;
+  border-bottom: white 2px solid;
+  letter-spacing: 150%;
+  font-size: 16px;
+  font-weight: 700;
+}
+/*collasped nav*/
+.navbar-toggle{
+  float: left;
+}
 
+.navbar-brand{
+  padding: 15px 15px 15px 5px;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #fff;
+}
+
+.navbar-inverse .navbar-toggle{
+  border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+      background-color: rgb(20,74,128);
+}
+header .navbar-inverse{
+  background-color: rgba(20,74,128,.7);
+    border-color: transparent;
+}
   /*END NAV*/
 .main{
   margin-left: auto;
@@ -194,10 +231,10 @@ a{
   font-size: 22px;
   padding: 10px;
   border-radius: 4px;
-  /*width: 625px;*/
+  width: 620px;
   height: 90px;
-  margin-bottom: 65px;
-  margin-top: 20px;
+  margin: 20px 0 50px 25px;
+  line-height: 150%
 }
 
 .social {
@@ -206,26 +243,42 @@ a{
 }
 .caregiver{
   padding-top: 20px;
+  padding-left: 50px;
 }
 .caregiver img{
   border-radius: 4px;
+  margin-left: 16px;
 }
 
 .center{
   text-align: center;
 }
+
+.center p{
+  font-size: 16px;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 30px;
+  line-height: 200%;
+}
 .caregiver h4{
   color: #144a80;
   font-weight: 700;
   margin-top: 0;
+  text-align: left;
+  margin-left: 20px
 }
 .caregiver p{
   line-height: 1.6;
   font-weight: 400;
   padding: 0;
-  color: #144a80;
+  text-align: left;
+  margin-left: 20px
   }
 
+.caregiver button {
+  margin-top: 45px;
+}
 .form-horizontal{
   padding-right:25px;
 }
@@ -239,6 +292,10 @@ a{
 }
 .sub h3{
 font-size: 30px;
+}
+
+.img-rounded{
+  margin: 0px 0 0 85px;
 }
 
 .form-text1{
@@ -283,4 +340,81 @@ footer ul{
     text-align: left;
 }
 /*MEDIA QUERIES*/
-@media only screen and (min-width: 992px){
+@media (max-width: 991px){
+
+.center p,
+.center h1{
+  padding: 0 20px;
+}
+
+.jumbo{
+ padding: 0;
+ width: auto;
+}
+.jumbo p{
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.img-rounded{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#large{
+  margin: 20px auto;
+  width: auto;
+  height: auto;
+}
+
+P #large{
+  font-size: 2.2rem;
+}
+.textarea{
+  padding: 0
+}
+
+.caregiver{
+  padding: 20px 0 0 0;
+
+}
+
+.caregiver h4{
+  text-align: center;
+}
+
+.caregiver img{
+  margin: auto;
+  padding-top: 20px;
+}
+
+.social{
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+#footer{
+  padding-top: 80px;
+}
+
+.fcenter p{
+  text-align: center;
+}
+
+.carousel-caption{
+  text-align: center;
+}
+
+}
+
+@media (max-width: 974px){
+.logo img{
+  padding-left: 150px;
+}
+
+.jumbo{
+  margin: 0;
+}
+
+}
